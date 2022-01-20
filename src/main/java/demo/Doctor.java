@@ -4,8 +4,13 @@ public class Doctor implements Staff{
     private String qualification;
     private Nurse nurse;
 
-    public Doctor(String qualification) {
+//    public Doctor(String qualification) {
+//        this.qualification = qualification;
+//    }
+
+    public Doctor(String qualification, Nurse nurse) {
         this.qualification = qualification;
+        this.nurse = nurse;
     }
 
     public Nurse getNurse() {

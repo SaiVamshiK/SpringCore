@@ -15,7 +15,10 @@
 <!--        <property name="nurse" ref="nurse">-->
 
 <!--        </property>-->
-        <constructor-arg value="MBBS">
+        <constructor-arg index="0" value="MBBS">
+
+        </constructor-arg>
+        <constructor-arg index="1" ref="nurse">
 
         </constructor-arg>
     </bean>
