@@ -10,7 +10,7 @@ public class Main {
 //        Nurse nurse = new Nurse();
 //        nurse.assist();
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
-        Doctor doctor = applicationContext.getBean(Doctor.class);
+        Staff doctor = applicationContext.getBean(Doctor.class);
         Nurse nurse = (Nurse) applicationContext.getBean("nurse");
         doctor.assist();
         nurse.assist();
