@@ -16,10 +16,10 @@ public class Main {
         nurse.assist();
         System.out.println();
 
-        Doctor doctor1 = applicationContext.getBean(Doctor.class);
-        System.out.println(doctor1.getQualification());
+        //Doctor doctor1 = applicationContext.getBean(Doctor.class);
+        //System.out.println(doctor1.getQualification());
         // MBBS value is the output
-        System.out.println(doctor1.getNurse());
+        //System.out.println(doctor1.getNurse());
         // actual object is the output
 
     }
