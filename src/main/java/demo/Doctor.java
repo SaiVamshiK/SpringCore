@@ -3,7 +3,7 @@ package demo;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Doctor implements Staff{
 //    private String qualification;
 //    private Nurse nurse;
