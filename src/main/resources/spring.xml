@@ -9,12 +9,15 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <bean class="demo.Doctor" id="doctor">
-        <property name="qualification" value="MBBS">
+<!--        <property name="qualification" value="MBBS">-->
 
-        </property>
-        <property name="nurse" ref="nurse">
+<!--        </property>-->
+<!--        <property name="nurse" ref="nurse">-->
 
-        </property>
+<!--        </property>-->
+        <constructor-arg value="MBBS">
+
+        </constructor-arg>
     </bean>
 
     <bean class="demo.Nurse" id="nurse">
