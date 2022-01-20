@@ -18,7 +18,7 @@ public class Main {
 
         Doctor doctor1 = applicationContext.getBean(Doctor.class);
         System.out.println(doctor1.getQualification());
-        // null value is the output
+        // MBBS value is the output
 
     }
 }
