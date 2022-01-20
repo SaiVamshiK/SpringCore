@@ -1,6 +1,7 @@
 package demo;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -9,7 +10,8 @@ public class Main {
 //        doctor.assist();
 //        Nurse nurse = new Nurse();
 //        nurse.assist();
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
         Staff doctor = applicationContext.getBean(Doctor.class);
         Nurse nurse = (Nurse) applicationContext.getBean("nurse");
         doctor.assist();
