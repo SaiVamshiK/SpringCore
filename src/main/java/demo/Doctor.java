@@ -2,7 +2,7 @@ package demo;
 
 public class Doctor implements Staff{
     private String qualification;
-    
+
     public String getQualification() {
         return qualification;
     }

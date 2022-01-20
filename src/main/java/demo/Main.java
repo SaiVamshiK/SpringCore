@@ -14,5 +14,11 @@ public class Main {
         Nurse nurse = (Nurse) applicationContext.getBean("nurse");
         doctor.assist();
         nurse.assist();
+        System.out.println();
+
+        Doctor doctor1 = applicationContext.getBean(Doctor.class);
+        System.out.println(doctor1.getQualification());
+        // null value is the output
+
     }
 }
