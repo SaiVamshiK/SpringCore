@@ -1,8 +1,10 @@
 package demo;
 
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
 
 @Component("MyDoctor")
 @Scope("prototype")

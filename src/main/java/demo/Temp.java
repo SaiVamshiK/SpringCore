@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Temp {
     @Autowired
-    @Qualifier("MyDoctor")
     private Staff staff;
 
     public void func()
