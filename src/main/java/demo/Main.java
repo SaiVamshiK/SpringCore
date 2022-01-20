@@ -29,5 +29,9 @@ public class Main {
         //System.out.println(doctor1.getNurse());
         // actual object is the output
 
+
+        Temp temp = applicationContext.getBean(Temp.class);
+        temp.func();
+
     }
 }

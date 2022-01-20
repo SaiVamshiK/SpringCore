@@ -4,7 +4,7 @@ package demo;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("MyDoctor")
 @Scope("prototype")
 public class Doctor implements Staff{
     private String qualification;
