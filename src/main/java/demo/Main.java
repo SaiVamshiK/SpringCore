@@ -20,7 +20,7 @@ public class Main {
         System.out.println(doctor1.getQualification());
         // MBBS value is the output
         System.out.println(doctor1.getNurse());
-        // null value is the output
+        // actual object is the output
 
     }
 }
