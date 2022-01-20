@@ -12,6 +12,9 @@
         <property name="qualification" value="MBBS">
 
         </property>
+        <property name="nurse" ref="nurse">
+
+        </property>
     </bean>
 
     <bean class="demo.Nurse" id="nurse">
