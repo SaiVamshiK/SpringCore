@@ -21,10 +21,10 @@ public class Main {
 
         Doctor doctor1 = applicationContext.getBean(Doctor.class);
         System.out.println(doctor1.getQualification());
-        // MBBS is output for above
+        // null is output for above
 
 
-        
+
         // MBBS value is the output
         //System.out.println(doctor1.getNurse());
         // actual object is the output
