@@ -12,14 +12,15 @@ public class Main {
 //        nurse.assist();
 //        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
-        Staff doctor = applicationContext.getBean(Doctor.class);
+        Doctor doctor = applicationContext.getBean(Doctor.class);
         Nurse nurse = (Nurse) applicationContext.getBean("nurse");
         doctor.assist();
+        doctor.setQualification("MBBS");
         nurse.assist();
         System.out.println();
 
-        //Doctor doctor1 = applicationContext.getBean(Doctor.class);
-        //System.out.println(doctor1.getQualification());
+        Doctor doctor1 = applicationContext.getBean(Doctor.class);
+        System.out.println(doctor1.getQualification());
         // MBBS value is the output
         //System.out.println(doctor1.getNurse());
         // actual object is the output

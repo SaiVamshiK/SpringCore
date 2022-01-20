@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 
 public class Doctor implements Staff{
-//    private String qualification;
+    private String qualification;
 //    private Nurse nurse;
 
 //    public Doctor(String qualification) {
@@ -25,12 +25,12 @@ public class Doctor implements Staff{
 //        this.nurse = nurse;
 //    }
 //
-//    public String getQualification() {
-//        return qualification;
-//    }
-//    public void setQualification(String qualification) {
-//        this.qualification = qualification;
-//    }
+    public String getQualification() {
+        return qualification;
+    }
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
     public void assist()
     {
         System.out.println("Doctor is assisting");
